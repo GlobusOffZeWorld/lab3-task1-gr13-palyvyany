@@ -37,7 +37,7 @@ int main (int argc, char** argv) {
     for(int i = 0; i < arr_size; ++i) {
         printf("%d ", ones_count(arr[i]));
     }
-    qsort(arr, 10, sizeof (int), (int(*) (const void *, const void *)) comp);
+    qsort(arr, arr_size, sizeof (int), (int(*) (const void *, const void *)) comp);
     printf("\n");
     printf("\n");
     for(int i = 0; i < arr_size; ++i) {
